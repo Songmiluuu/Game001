@@ -55,3 +55,22 @@ footer {
   color: #DBEDF3;
   font-family: sans-serif;
 }
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  /* Center container and set width to take up more space */
+  .container {
+    width: 90%;
+  }
+
+  /* Reduce button size to fit on smaller screens */
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 15px;
+  }
+
+  /* Adjust font size of the title */
+  #level-title {
+    font-size: 2rem;
+  }
+}
+
