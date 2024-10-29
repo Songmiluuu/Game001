@@ -3,14 +3,12 @@ var gamePattern = [];
 var userClickedPattern = [];
 var started = false;
 var level = 0;
-$(document).keypress(function(){
-    if (!started)
-    {
-        
+$(document).on("keypress touchstart", function(){
+    if (!started) {
         nextSequence();
         started = true;
     }
-})
+});
 
 $(".btn").click(function()
 {
